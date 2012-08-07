@@ -1,0 +1,73 @@
+@import "compass/reset";
+@import "compass/css3/box";
+@import "compass/css3/border-radius";
+@import "compass/css3/shared";
+
+$size: 400px;
+$border-color: #d1d8e6;
+$bg-color: #bac5db;
+
+#css3-loader-container {
+	width: $size;
+	height: $size;
+	position: relative;
+	margin: 0 auto;
+	@include display-box;
+	@include box-orient(horizontal);
+	
+	.bar {
+		border: 1px solid #96a6c9;
+		background-color: #99aaca;
+		position: relative;
+		margin-right: 4%;
+		margin-left: 4%;
+		margin-top: 25%; 
+		height: 50%; 
+		@include box-flex(1);
+		@include border-radius(4px);
+		@include experimental(animation, css3-facebook-loader 1s infinite);
+
+		&:nth-child(2) {
+			@include experimental(animation-delay, 0.1s);
+		}
+
+		&:nth-child(3) {
+			@include experimental(animation-delay, 0.2s);
+		}
+
+	}
+
+}
+
+@-webkit-keyframes css3-facebook-loader {
+	0% {}
+	10% { 
+		margin-top: 25%; 
+		height: 50%; 
+		border-color: $border-color; 
+		background-color: $bg-color; 
+	}
+	20% { 
+		margin-top: 20%; 
+		height: 55%; 
+		border-color: tint($border-color, 80);//#d1d7e2; 
+		background-color: tint($bg-color, 80);//#c6ccda; 
+	}
+	30% { 
+		margin-top: 17%; 
+		height: 70%; 
+		border-color: $border-color; 
+		background-color: $bg-color; 
+	}
+	40% { 
+		margin-top: 10%; 
+		height: 80%; 
+	}
+	50% { 
+		margin-top: 5%; 
+		height: 99%; 
+	}
+	60% {}
+	70% {}
+	100% {}
+}

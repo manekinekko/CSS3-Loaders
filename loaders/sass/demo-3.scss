@@ -1,0 +1,72 @@
+@import "compass/css3/shared";
+@import "compass/css3/border-radius";
+@import "compass/css3/box-shadow";
+@import "compass/css3/transform";
+@import "compass/css3/opacity";
+@import "compass/utilities";
+@import "compass/layout/stretching";
+
+$size: 100px;
+$border-width:5px;
+
+body {
+	background: #666;
+}
+
+#css3-loader-container {
+	margin: 0 auto;
+	width: $size;
+	height: $size;
+	@include border-radius($size);
+	position: relative;
+	@include experimental(animation, css3-loader 6s 0 infinite linear);
+
+	.bar {
+		display: table-cell;
+		width: 1px;
+		@include border-radius(30px);
+		@include box-shadow(0 0 30px #EEE);
+		border: $border-width solid #eee;
+		height: 100%;
+		background: #eee;
+		position: absolute;
+		
+		&:nth-child(1) {
+			@include transform(translate(($size/2)-$border-width, -$border-width));
+		}
+
+		&:nth-child(2) {
+			@include transform(rotate(45deg) translate(28px, -35px));
+		}
+
+		&:nth-child(3) {
+			@include transform(rotate(135deg) translate(-36px, -28px));
+		}
+
+		&:nth-child(4) {
+			@include transform(rotate(90deg) translate(-$border-width, -(($size/2)-$border-width)));
+		}
+
+	}
+
+}
+
+.label {
+	text-align: center;
+	font-size: 20px;
+	text-shadow: 0 1px 1px #AAA;
+	color: white;
+	padding: 14px 0;
+	@include experimental(animation, css3-loader-fader 1s 0 infinite linear);
+}
+
+@-webkit-keyframes css3-loader {
+	from { -webkit-transform: rotate(0deg); }
+	to { -webkit-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes css3-loader-fader {
+	10% { @include opacity(1); }
+	50% { @include opacity(0.2); }
+	80% { @include opacity(1); }
+}

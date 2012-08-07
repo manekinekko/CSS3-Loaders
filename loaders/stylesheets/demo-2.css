@@ -1,0 +1,71 @@
+/* line 12, ../sass/demo-2.scss */
+#css3-loader-container {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0 40px 40px 0;
+  width: 400px;
+  height: 400px;
+}
+/* line 20, ../sass/demo-2.scss */
+#css3-loader-container .spinner {
+  width: 100%;
+  height: 100%;
+  border-top: 20px solid #2f7fb8;
+  border-right: 20px solid #f8d11c;
+  border-bottom: 20px solid #ed443f;
+  border-left: 20px solid #5ab85a;
+  -webkit-border-radius: 800px;
+  -moz-border-radius: 800px;
+  -ms-border-radius: 800px;
+  -o-border-radius: 800px;
+  border-radius: 800px;
+  -webkit-animation: css3-loader-spinner 0.5s 0 infinite linear;
+  -moz-animation: css3-loader-spinner 0.5s 0 infinite linear;
+  -ms-animation: css3-loader-spinner 0.5s 0 infinite linear;
+  -o-animation: css3-loader-spinner 0.5s 0 infinite linear;
+  animation: css3-loader-spinner 0.5s 0 infinite linear;
+}
+/* line 31, ../sass/demo-2.scss */
+#css3-loader-container .label {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 200px;
+  font-size: 44.444px;
+  color: #2579b5;
+  -webkit-animation: css3-loader-label 2s 0 infinite;
+  -moz-animation: css3-loader-label 2s 0 infinite;
+  -ms-animation: css3-loader-label 2s 0 infinite;
+  -o-animation: css3-loader-label 2s 0 infinite;
+  animation: css3-loader-label 2s 0 infinite;
+}
+
+@-webkit-keyframes css3-loader-label {
+  /* line 43, ../sass/demo-2.scss */
+  from {
+    opacity: 0.2;
+  }
+
+  /* line 44, ../sass/demo-2.scss */
+  50% {
+    opacity: 1;
+  }
+
+  /* line 45, ../sass/demo-2.scss */
+  to {
+    opacity: 0.2;
+  }
+}
+
+@-webkit-keyframes css3-loader-spinner {
+  /* line 48, ../sass/demo-2.scss */
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  /* line 49, ../sass/demo-2.scss */
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}

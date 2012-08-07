@@ -1,0 +1,50 @@
+@import "compass/css3/border-radius";
+
+$red: rgb(237, 68, 63);
+$green: rgb(90, 184, 90);
+$blue: rgb(37, 121, 181);
+$yellow: rgb(248, 207, 17);
+
+$size: 400px;
+$border-width: $size/20;
+$border-radius: $size*2;
+
+#css3-loader-container {
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 0 $border-width*2 $border-width*2 0;
+	width: $size;
+	height: $size;
+	
+	.spinner {
+		width: 100%;
+		height: 100%;
+		border-top: $border-width solid tint($blue, 5);
+		border-right: $border-width solid tint($yellow, 5);
+		border-bottom: $border-width solid $red;
+		border-left: $border-width solid $green;
+		@include border-radius($border-radius);
+		@include experimental(animation, css3-loader-spinner 0.5s 0 infinite linear);
+	}
+
+	.label {
+		width: 100%;
+		text-align: center;
+		position: absolute;
+		top: $size/2;
+		font-size: $size/9;
+		color: $blue;
+		@include experimental(animation, css3-loader-label 2s 0 infinite);
+	}
+
+}
+@-webkit-keyframes css3-loader-label {
+	from { opacity: 0.2; }
+	50%  { opacity: 1; }
+	to 	 { opacity: 0.2; }
+}
+@-webkit-keyframes css3-loader-spinner {
+	from { -webkit-transform: rotate(0deg); }
+	to 	 { -webkit-transform: rotate(360deg); }
+}

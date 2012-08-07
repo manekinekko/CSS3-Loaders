@@ -1,0 +1,55 @@
+/*
+Syntax error: File to import not found or unreadable: compass/css3/shared.
+              Load paths:
+                D:/Development/WebRoot/CSS3Loaders/loaders/sass
+                D:/Development/WebRoot/CSS3Loaders/loaders/sass
+        on line 1 of ./demo-3.scss
+
+1: @import "compass/css3/shared";
+2: @import "compass/css3/border-radius";
+3: @import "compass/css3/transform";
+4: @import "compass/utilities";
+5: @import "compass/layout/stretching";
+6: 
+
+Backtrace:
+./demo-3.scss:1
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/import_node.rb:64:in `rescue in import'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/import_node.rb:42:in `import'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/import_node.rb:25:in `imported_file'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:149:in `rescue in visit_import'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:154:in `visit_import'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:37:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:18:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:53:in `map'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:47:in `visit_root'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:37:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:18:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:7:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/root_node.rb:20:in `render'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/engine.rb:300:in `_render'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/engine.rb:247:in `render'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/plugin/compiler.rb:340:in `update_stylesheet'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/plugin/compiler.rb:202:in `block in update_stylesheets'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/plugin/compiler.rb:200:in `each'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/plugin/compiler.rb:200:in `update_stylesheets'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/plugin/compiler.rb:234:in `watch'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/plugin.rb:107:in `method_missing'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/exec.rb:431:in `watch_or_update'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/exec.rb:302:in `process_result'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/exec.rb:41:in `parse'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/exec.rb:21:in `parse!'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/bin/sass:8:in `<top (required)>'
+C:/Ruby193/bin/sass:23:in `load'
+C:/Ruby193/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: compass/css3/shared.\A               Load paths:\A                 D:/Development/WebRoot/CSS3Loaders/loaders/sass\A                 D:/Development/WebRoot/CSS3Loaders/loaders/sass\A         on line 1 of ./demo-3.scss\A \A 1: @import \"compass/css3/shared\";\A 2: @import \"compass/css3/border-radius\";\A 3: @import \"compass/css3/transform\";\A 4: @import \"compass/utilities\";\A 5: @import \"compass/layout/stretching\";\A 6: "; }
